@@ -38,19 +38,7 @@
   --border2:  rgba(255,255,255,.12);
   --borderB:  rgba(59,126,248,.18);
 }
-[data-theme="light"]{
-  --bg:         #0d1e38;
-  --text:       #dceaf8;
-  --text2:      #8ab0ce;
-  --text3:      #4a6a88;
-  --glass-nav:  rgba(2,8,20,.32);
-  --glass-sect: rgba(2,8,20,.44);
-  --glass-card: rgba(4,14,38,.58);
-  --glass-card2:rgba(5,16,42,.62);
-  --glass-deep: rgba(2,8,20,.70);
-  --border:   rgba(255,255,255,.08);
-  --border2:  rgba(255,255,255,.14);
-}
+
 
 /* ══════════════════════════════════════
    RESET + BASE
@@ -126,16 +114,7 @@ nav{
 .nav-links a:hover{color:var(--text);background:rgba(255,255,255,.06);}
 .nav-links a.active{color:#fff;background:rgba(59,126,248,.18);border:1px solid rgba(59,126,248,.25);}
 .nav-right{display:flex;align-items:center;gap:.5rem;}
-.theme-btn{
-  width:34px;height:34px;border-radius:9px;
-  border:1px solid var(--border2);
-  background:rgba(255,255,255,.06);
-  cursor:pointer;display:grid;place-items:center;
-  font-size:.95rem;color:var(--text2);
-  transition:all var(--tr);
-  -webkit-appearance:none;
-}
-.theme-btn:hover{background:rgba(255,255,255,.12);color:var(--text);}
+
 .mob-btn{
   display:none;background:none;border:none;
   color:var(--text);cursor:pointer;font-size:1.3rem;padding:.4rem;
@@ -665,7 +644,6 @@ nav{
     <li><a onclick="go('contact')"  data-p="contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <button class="theme-btn" id="themeBtn">🌙</button>
     <button class="mob-btn" id="mobBtn">☰</button>
   </div>
 </nav>
@@ -893,7 +871,7 @@ nav{
       </div>
       <div class="rsidebar">
         <div class="dl-card reveal"><div class="dl-icon">📄</div><div class="dl-title">Download Resume</div><div class="dl-desc">Get a full PDF copy of Anthony's resume with complete experience and skills.</div><a class="btn-dl" href="Anthony_M_Ogunlade_-_Database_Architect.pdf" download>⬇ Download PDF</a></div>
-        <div class="rpanel reveal"><div class="rpanel-title">Contact Info</div><div class="rrow"><span class="l">Email</span><span class="v"><a href="mailto:oluwaseunanthony9@gmail.com">oluwaseunanthony9@gmail.com</a></span></div><div class="rrow"><span class="l">Phone</span><span class="v">(412) 557-1653</span></div><div class="rrow"><span class="l">Location</span><span class="v">Pittsburgh, PA</span></div><div class="rrow"><span class="l">GitHub</span><span class="v"><a href="https://github.com/ano54" target="_blank">github.com/ano54</a></span></div></div>
+        <div class="rpanel reveal"><div class="rpanel-title">Contact Info</div><div class="rrow"><span class="l">Email</span><span class="v"><a href="/cdn-cgi/l/email-protection#36595a434157455343585758425e59584f0f76515b575f5a1855595b"><span class="__cf_email__" data-cfemail="2d4241585a4c5e4858434c435945424354146d4a404c4441034e4240">[email&#160;protected]</span></a></span></div><div class="rrow"><span class="l">Phone</span><span class="v">(412) 557-1653</span></div><div class="rrow"><span class="l">Location</span><span class="v">Pittsburgh, PA</span></div><div class="rrow"><span class="l">GitHub</span><span class="v"><a href="https://github.com/ano54" target="_blank">github.com/ano54</a></span></div></div>
         <div class="rpanel reveal"><div class="rpanel-title">Core Competencies</div><div class="rrow"><span class="l">DBA</span><span class="v">5+ yrs MSSQL</span></div><div class="rrow"><span class="l">Languages</span><span class="v">Python · SQL · Kotlin</span></div><div class="rrow"><span class="l">Databases</span><span class="v">MySQL · MongoDB</span></div><div class="rrow"><span class="l">Cloud</span><span class="v">AWS/Azure concepts</span></div><div class="rrow"><span class="l">APIs</span><span class="v">REST · Flask · JSON</span></div><div class="rrow"><span class="l">BI Tools</span><span class="v">Tableau · Jupyter</span></div></div>
       </div>
     </div>
@@ -907,7 +885,7 @@ nav{
   <div class="sec-body">
     <div class="contact-layout">
       <div class="ccontacts">
-        <a class="cccard reveal" href="mailto:oluwaseunanthony9@gmail.com"><div class="cc-ico">✉️</div><div><div class="cc-lbl">Email</div><div class="cc-val">oluwaseunanthony9@gmail.com</div></div></a>
+        <a class="cccard reveal" href="/cdn-cgi/l/email-protection#56393a232137253323383738223e39382f6f16313b373f3a7835393b"><div class="cc-ico">✉️</div><div><div class="cc-lbl">Email</div><div class="cc-val"><span class="__cf_email__" data-cfemail="1a75766f6d7b697f6f747b746e72757463235a7d777b737634797577">[email&#160;protected]</span></div></div></a>
         <a class="cccard reveal" href="tel:4125571653"><div class="cc-ico">📞</div><div><div class="cc-lbl">Phone</div><div class="cc-val">(412) 557-1653</div></div></a>
         <a class="cccard reveal" href="https://github.com/ano54" target="_blank"><div class="cc-ico">💻</div><div><div class="cc-lbl">GitHub</div><div class="cc-val">github.com/ano54</div></div></a>
         <a class="cccard reveal" href="https://www.linkedin.com/in/anthony-ogunlade" target="_blank"><div class="cc-ico">🔗</div><div><div class="cc-lbl">LinkedIn</div><div class="cc-val">linkedin.com/in/anthony-ogunlade</div></div></a>
@@ -928,7 +906,7 @@ nav{
 </div>
 
 <!-- ══════════════════════ JAVASCRIPT ══════════════════════ -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
 'use strict';
 
@@ -1085,14 +1063,6 @@ window.go = function(id){
   if(id==='skills') setTimeout(animBars, 200);
 };
 
-/* ── 3. THEME TOGGLE ────────────────────────────── */
-document.getElementById('themeBtn').addEventListener('click', function(){
-  const d = document.documentElement;
-  const now = d.getAttribute('data-theme')==='dark';
-  d.setAttribute('data-theme', now?'light':'dark');
-  this.textContent = now ? '☀️' : '🌙';
-});
-
 /* ── 4. MOBILE MENU ─────────────────────────────── */
 document.getElementById('mobBtn').addEventListener('click',()=>{
   document.getElementById('mobNav').classList.toggle('open');
@@ -1135,15 +1105,4 @@ window.filt = function(cat,el){
 
 /* ── 8. CONTACT FORM ────────────────────────────── */
 window.handleSend = function(){
-  const b = document.querySelector('.btn-send');
-  b.textContent='✓ Message Sent!';
-  b.style.background='linear-gradient(135deg,#22c55e,#16a34a)';
-  setTimeout(()=>{ b.innerHTML='✉️ Send Message'; b.style.background=''; },3000);
-};
-
-/* ── INIT ───────────────────────────────────────── */
-setTimeout(revealAll, 120);
-})();
-</script>
-</body>
-</html>
+  const b = document.querySelect
